@@ -2,20 +2,34 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>n- Fakultet</title>
+		<title>n-fakultet</title>
 		<script src="main.js"></script>
 		<style>
-			
+			.wrap {
+				width: 100%;
+				overflow: auto;
+			}
+			.left {
+				float: left; 
+				width: 40%;
+				background:lightblue;
+				min-height: 400px;
+				padding: 10px;
+			}
 		</style>
 	</head>
 	<body onload="onLoad()">
-		<h3>n- Fakultet</h3>
-		
-		<p>Iterativ metode</p>
-		<form name="index">
-			<input id="itInput" name="itin" type="number" value="0"></input>
-			<button type='button' onclick="itLoop()">Kør Iterativ metode</button>
-			<div id="itDiv"></div>
-		</form>
+		<div class="wrap">
+			<h3>n-fakultet</h3>
+			
+			<div class="left">
+				<p>Iterativ metode</p>
+				<form name="itIndex">
+					<input id="itInput" name="itIn" type="number" value="0"></input>
+					<button type='button' onclick="itLoop()">Kør Iterativ metode</button>
+					<div id="itDiv"></div>
+				</form>
+			</div>
+		</div>
 	</body>
 </html>
