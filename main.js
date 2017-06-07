@@ -43,12 +43,3 @@ function itLoop() {
 	console.log('The factorial of ' + itIn + ' is ' + fact);
 	getID('itDiv').innerHTML += 'The factorial of ' + itIn + ' is ' + fact + "<br/>";
 }
-/* //Den rekursive metode, set i opgaven. Bruges ikke på denne side.
-function recursion(input) {
-	if(input == 0) {
-		return 1;
-	} else {
-		return input * recursion(input - 1);
-	}
-}
-*/
